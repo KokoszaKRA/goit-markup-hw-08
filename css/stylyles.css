@@ -1,3 +1,75 @@
-body {
-  background-color: rgb(151, 113, 113);
+:root {
+  --main-font: font-family: 'Raleway', sans-serif;
+  /* --secondery-font:font-family: ; */
+  --main-color: #757575; 
+  --secondery-color: #212121;
+  --third-color: #2196F3;
+  
 }
+
+body {
+  font-family:'Roboto', sans-serif;
+  color:var(--main-color);
+}
+
+
+/* =========== LOGO ================ */
+
+.logo-span{
+  color:var(--third-color);
+}
+.logo, .footer-logo{
+font-family: var(--main-font);
+font-style: normal;
+font-weight:700;
+font-size:26px;
+line-height: 1.192;
+text-decoration: none;
+}
+.logo{
+color:var(--secondery-color);
+}
+.footer-logo{
+color:#FFFFFF;
+}
+
+/* =========== END LOGO ================ */
+
+/* ========= HEDER ============ */
+.navigation-list-link{
+color: var(--secondery-color);
+}
+.navigation-list-item a:hover{
+  color:var(--third-color);
+}
+
+.header-address-item, .navigation-list-link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  }
+
+
+
+.heder-address-list a:hover{
+  text-decoration: none;
+  color:var(--main-color);
+}
+
+
+
+
+/* ========= END HEDER ============ */
+
+
+.category-list-btn:hover, .category-list-btn:focus{
+  color:#FFFFFF;
+  cursor:pointer;
+  background-color: var(--third-color);
+}
+
+
+
