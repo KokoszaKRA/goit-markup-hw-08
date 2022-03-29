@@ -1,62 +1,75 @@
 :root {
-  --main-font: font-family: 'Raleway', sans-serif;
-  /* --secondery-font:font-family: ; */
+  --main-font: font-family: 'Roboto', sans-serif;;
+  --secondery-font:font-family: 'Raleway', sans-serif;
   --main-color: #757575; 
   --secondery-color: #212121;
   --third-color: #2196F3;
-  
+  --background: #2F303A;
+  --color-white: #FFF;
 }
 
 body {
-  font-family:'Roboto', sans-serif;
+  font-family:var(--main-font);
   color:var(--main-color);
 }
 
 
 /* =========== LOGO ================ */
 
-.logo-span{
-  color:var(--third-color);
-}
-.logo, .footer-logo{
-font-family: var(--main-font);
-font-style: normal;
-font-weight:700;
+.logo, 
+.footer-logo{
+font-family: var(--secondery-font);
 font-size:26px;
 line-height: 1.192;
-text-decoration: none;
 }
-.logo{
+
+.logo,
+.portfolio-picture-title,
+.navigation-list-link{
 color:var(--secondery-color);
 }
+
 .footer-logo{
 color:#FFFFFF;
 }
 
+.logo-span{
+  color:var(--third-color);
+}
 /* =========== END LOGO ================ */
 
 /* ========= HEDER ============ */
-.navigation-list-link{
-color: var(--secondery-color);
-}
+
+
 .navigation-list-item a:hover{
   color:var(--third-color);
 }
 
-.header-address-item, .navigation-list-link{
-  font-style: normal;
+.header-address-item,
+.navigation-list-link{  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  letter-spacing: 0.02em;  
   }
 
-
-
-.heder-address-list a:hover{
-  text-decoration: none;
+.header-address-item{
   color:var(--main-color);
+}
+
+.portfolio-pictue-name,
+.header-address-item,
+.navigation-list-link,
+.logo,
+.footer-logo,
+.header-address-list,
+.footer-address-itam,
+.footer-adres,
+.footer-mail,
+.footer-tel,
+.portfolio-picture-title{
+text-decoration: none;
+font-style: normal;
 }
 
 
@@ -65,11 +78,78 @@ color: var(--secondery-color);
 /* ========= END HEDER ============ */
 
 
-.category-list-btn:hover, .category-list-btn:focus{
-  color:#FFFFFF;
-  cursor:pointer;
+/* =========== BUTTON ========== */
+
+
+
+.list-btn-item:hover, .list-btn-item:focus{
+  color: #FFFFFF;
+  cursor: pointer;
   background-color: var(--third-color);
 }
+
+
+
+/* =========== END BUTTON ========== */
+
+
+/* =========== MAIN PORTFOLIO =========== */
+
+.portfolio-picture{
+width: 370px;
+height: 294px;
+}
+
+.portfolio-picture-title{
+width: 322px;
+height: 36px;
+left: 239px;
+font-size: 18px;
+line-height: 1.833;
+letter-spacing: 0.06em;
+}
+
+.portfolio-picture-title,
+.logo, 
+.footer-logo{
+font-weight: 700;
+}
+
+.portfolio-pictue-name{
+  width: 322px;
+height: 30px;
+left: 239px;
+top: 616px;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+}
+
+.portfolio-pictue-name,
+.footer-adres,
+.footer-mail,
+.footer-tel{
+font-weight: 400;
+}
+
+/* =================== END MAIN PORTFOLIO ================ */
+
+/* ========= FOOTER ============  */
+.footer-adres,
+.footer-mail,
+.footer-tel{
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+
+color: var(--color-white);
+
+}
+footer{
+  background-color: var(--background);
+}
+
+/* ========= end FOOTER ============  */
 
 
 
