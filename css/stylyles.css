@@ -47,6 +47,10 @@ color:var(--color-black);
 .logo-span{
   color:var(--color-blue);
 }
+
+.footer-logo {
+  color: var(--color-white)
+}
 /* =================== END LOGO =================== */
 
 /* ==================== NAVIGATION =====================  */
@@ -97,24 +101,26 @@ color: var(--main-color);
   width: 200px;
   height: 50px;
   left: 700px;
-  top: 430px;
-  
+  top: 430px;  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: #FFFFFF;  
   background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
-.conteiner-order-btn p{
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.875;
-/* display: flex; */
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+.conteiner-order-btn:hover,
+.conteiner-order-btn:focus{
+cursor:pointer;
 }
+
 
 .article-title{
 font-style: normal;
@@ -163,14 +169,51 @@ line-height: 1.187;
 /* text-align: center; */
 letter-spacing: 0.03em;
 }
-/* ======================== ENDCONTENT MAIN ======================= */
+/* ======================== END CONTENT MAIN ======================= */
 
-/* =============== LOGO FOOTER =============== */
+/* =============================== PORTFOLIO CONTENT =================== */
+.list-btn-item{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+text-align: center;
+letter-spacing: 0.03em;
 
-.footer-logo{
-  color:var(--color-white)
+color: #212121;
 }
-/* =============== END LOGO FOOTER =============== */
+
+.list-btn-item:hover,
+.list-btn-item:focus{
+cursor:pointer;
+
+background: var(--color-blue);
+color:var(--color-white);
+
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.portfolio-picture-title{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: var(--color-black);
+}
+
+.portfolio-pictue-name{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+}
+/* ===========================  END PORTFOLIO CONTENT =================== */
+
+
 /* ==================== FOOTER ==================== */
 footer{
 background-color: var(--color-background);
@@ -183,5 +226,8 @@ font-size: 14px;
 line-height: 1.5;
 letter-spacing: 0.03em;
 color: var(--color-white);
+}
+.footer-address-link[href^="mail"]{
+text-decoration: underline;
 }
 /* ==================== END FOOTER ==================== */
