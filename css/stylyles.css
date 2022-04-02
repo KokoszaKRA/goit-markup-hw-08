@@ -2,9 +2,9 @@
   --main-font: font-family: 'Roboto', sans-serif;;
   --secondery-font:font-family: 'Raleway', sans-serif;
   --main-color: #757575; 
-  --secondery-color: #212121;
-  --third-color: #2196F3;
-  --background: #2F303A;
+  --color-black: #212121;
+  --color-blue: #2196F3;
+  --color-background: #2F303A;
   --color-white: #FFF;
 }
 
@@ -13,176 +13,175 @@ body {
   color:var(--main-color);
 }
 
-
-/* =========== LOGO ================ */
-
-.logo, 
-.footer-logo{
-font-family: var(--secondery-font);
-font-size:26px;
-line-height: 1.192;
+.navigation-list,
+.header-address-list,
+.conteiner-order-list,
+.article-list,
+.whot-we-do-picture-list,
+.tean-picture-list,
+.footrt-address-list,
+.list-btn,
+.portfolio-category-list{
+list-style: none;
 }
+
+/* =====================   HEADER  ===================== */
+/* ================== LOGO ================ */
 
 .logo,
-.portfolio-picture-title,
-.navigation-list-link,
-.article-title{
-color:var(--secondery-color);
-}
-
 .footer-logo{
-color:#FFFFFF;
-}
+width: 145px;
+height: 31px;
+/* left: 215px;
+top: 24px; */
 
-.footer-address-item:hover,
-.logo-span,
-.header-address-item:hover,
-.list-btn-item:hover,
-.list-btn-item:focus,
-.navigation-list-link:hover{
-  color:var(--third-color);
+font-family: 'Raleway';
+font-style: normal;
+text-decoration: none;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+letter-spacing: 0.03em;
+color:var(--color-black);
 }
-/* =========== END LOGO ================ */
+.logo-span{
+  color:var(--color-blue);
+}
+/* =================== END LOGO =================== */
 
-/* ========= HEDER ============ */
-.article-title,
-.header-address-item,
-.navigation-list-link{  
+/* ==================== NAVIGATION =====================  */
+.navigation-list-link,
+.header-address-link{
+  text-decoration: none;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;  
-  }
-
-.header-address-item{
-  color:var(--main-color);
+  line-height: 1,142;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
 }
 
-.portfolio-pictue-name,
-.header-address-item,
-.navigation-list-link,
-.logo,
-.footer-logo,
-.header-address-list,
-.footer-address-itam,
-.portfolio-picture-title,
-.footer-address-item,
-.conteiner-first-title{
-text-decoration: none;
+.footer-address-link:hover,
+.footer-address-link:focus,
+.header-address-link:hover,
+.header-address-link:focus,
+.navigation-list-link:hover,
+.navigation-list-link:focus{
+cursor:pointer;
+color: var(--color-blue);
+}
+
+.header-address-link{
+color: var(--main-color);
+}
+
+/* ==================== END NAVIGATION =====================  */
+/* =====================  END HEADER  ===================== */
+
+/* ======================== CONTENT MAIN ======================= */
+.contener-order{
+  background-color: var(--color-background);
+}
+.conteiner-order-title{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;    
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.conteiner-order-btn{
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.conteiner-order-btn p{
 font-style: normal;
-}
-
-/* ========= END HEDER ============ */
-
-
-/* =========== BUTTON ========== */
-
-.list-btn-item:hover,
-.list-btn-item:focus{ 
-  cursor: pointer;
-  background-color: var(--third-color);
-}
-
-/* =========== END BUTTON ========== */
-
-
-/* =========== MAIN PORTFOLIO =========== */
-
-.portfolio-picture{
-width: 370px;
-height: 294px;
-}
-
-.portfolio-picture-title{
-width: 322px;
-height: 36px;
-font-size: 18px;
-line-height: 1.833;
-}
-
-.article-title,
-.portfolio-picture-title,
-.logo, 
-.footer-logo,
-.main-btn{
 font-weight: 700;
-}
-
-.article-title,
-.portfolio-pictue-name,
-.footer-address-item,
-.article-text{
-letter-spacing: 0.03em;
-}
-
-.portfolio-pictue-name{
-  width: 322px;
-height: 30px;
-}
-
-.portfolio-pictue-name,
-.main-btn{
 font-size: 16px;
-line-height: 1.875;}
-
-.portfolio-pictue-name,
-.footer-address-item,
-.article-text{
-font-weight: 400;
-}
-
-/* =================== END MAIN PORTFOLIO ================ */
-
-/* ================ MAIN AGENCJA ========================== */
-.contener-first{
-  background-color: var(--background);
-}
-.conteiner-first-title{
-width: 696px;
-height: 120px;
-font-weight: 900;
-font-size: 44px;
-line-height: 1.363;
-text-align: center;
-text-transform: uppercase;
-}
-.main-btn,
-.conteiner-first-title,
-.portfolio-picture-title{
-letter-spacing: 0.06em;
-}
-
-.list-btn-item:hover,
-.list-btn-item:focus,
-.conteiner-first-title,
-.footer-address-item,
-.main-btn{
-color: var(--color-white);
-}
-
-.main-btn{
-background-color: var(--third-color);
-display: flex;
+line-height: 1.875;
+/* display: flex; */
 align-items: center;
 text-align: center;
-
+letter-spacing: 0.06em;
+color: #FFFFFF;
 }
 
-
-/* ================ END MAIN AGENCJA ========================== */
-
-
-/* ========= FOOTER ============  */
-.footer-address-item,
-.article-text{
+.article-title{
+font-style: normal;
+font-weight: 700;
 font-size: 14px;
-line-height: 1.714;
+line-height: 1.142;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--color-black);
 }
+
+.article-text{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+display:block;
+}
+
+.agencja-main-category{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.166;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-black);
+}
+
+.person-name{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.187;
+/* text-align: center; */
+letter-spacing: 0.03em;
+color: var(--color-black);
+}
+
+.person-position{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.187;
+/* text-align: center; */
+letter-spacing: 0.03em;
+}
+/* ======================== ENDCONTENT MAIN ======================= */
+
+/* =============== LOGO FOOTER =============== */
+
+.footer-logo{
+  color:var(--color-white)
+}
+/* =============== END LOGO FOOTER =============== */
+/* ==================== FOOTER ==================== */
 footer{
-  background-color: var(--background);
+background-color: var(--color-background);
 }
-
-/* ========= end FOOTER ============  */
-
-
-
+.footer-address-link{
+text-decoration: none;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: var(--color-white);
+}
+/* ==================== END FOOTER ==================== */
