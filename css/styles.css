@@ -13,25 +13,86 @@ body {
   color:var(--main-color);
 }
 
-.navigation-list,
-.header-address-list,
-.conteiner-order-list,
-.article-list,
-.whot-we-do-picture-list,
-.tean-picture-list,
-.footrt-address-list,
-.list-btn,
-.portfolio-category-list{
-list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol{
+  margin: 0;
+  padding: 0;
 }
 
+
+
+p,
+figure{
+  margin: 0;
+}
+
+img {
+display: block;
+}
+
+
+
+.list{
+  list-style-type: none;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.container{
+  width: 1200px;
+  align-items: center;
+  margin: 0;
+}
+
+.header .container{
+display: flex;
+align-items: center;
+}
+
+.navigation{
+  display: flex;
+}
+
+.navigation-list{
+ display: flex;
+ align-items: center;
+}
+.header-address-list{
+  display: flex;
+}
+
+.logo{
+  padding-left: 215px;
+  padding-right: 93px;
+}
+
+.navigation-list-item:not(:last-child){
+  margin-right: 46px;
+}
+
+.header .header-address {
+  margin-left: auto;
+}
+
+.header-tel{
+  margin-left: 50px;
+}
+  
 /* =====================   HEADER  ===================== */
 /* ================== LOGO ================ */
 
 .logo,
 .footer-logo{
-width: 145px;
-height: 31px;
+/* width: 145px;
+height: 31px; */
 /* left: 215px;
 top: 24px; */
 
@@ -51,6 +112,7 @@ color:var(--color-black);
 .footer-logo {
   color: var(--color-white)
 }
+
 /* =================== END LOGO =================== */
 
 /* ==================== NAVIGATION =====================  */
@@ -60,7 +122,7 @@ color:var(--color-black);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,142;
+  line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--color-black);
 }
@@ -98,10 +160,10 @@ color: var(--main-color);
 }
 
 .conteiner-order-btn{
-  width: 200px;
+  /* width: 200px;
   height: 50px;
   left: 700px;
-  top: 430px;  
+  top: 430px;   */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -199,7 +261,7 @@ border-radius: 4px;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
-line-height: 36px;
+line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-black);
 }
