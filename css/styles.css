@@ -50,6 +50,8 @@ display: block;
   width: 1200px;
   align-items: center;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header .container{
@@ -70,8 +72,7 @@ align-items: center;
 }
 
 .logo{
-  padding-left: 215px;
-  padding-right: 93px;
+  padding: 24px 93px 25px 7.441%;
 }
 
 .navigation-list-item:not(:last-child){
@@ -84,7 +85,37 @@ align-items: center;
 
 .header-tel{
   margin-left: 50px;
+  margin-right: 227px;
 }
+
+.conteiner-order-title{
+  width: 696px;
+  height: 120px;
+
+  display: block;
+}
+.contener-order .conteiner-order-list{
+  height: 600px;
+  display: block;
+  padding-top: 200px;
+  }
+
+.conteiner-order-list{
+  display: block;
+}
+
+.conteiner-order-title{
+margin-left: auto;
+margin-right: auto;
+}
+
+.conteiner-order-btn{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
   
 /* =====================   HEADER  ===================== */
 /* ================== LOGO ================ */
@@ -157,20 +188,19 @@ color: var(--main-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  display: block;
 }
 
 .conteiner-order-btn{
-  /* width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;   */
+  width: 200px;
+  height: 50px;  
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  /* display: flex; */
-  align-items: center;
-  text-align: center;
+  display: block;
+  /* align-items: center;
+  text-align: center; */
   letter-spacing: 0.06em;
   border-radius: 4px;
   color: #FFFFFF;  
@@ -277,7 +307,7 @@ letter-spacing: 0.03em;
 
 
 /* ==================== FOOTER ==================== */
-footer{
+.footer .container{
 background-color: var(--color-background);
 }
 .footer-address-link{
