@@ -47,7 +47,7 @@ display: block;
 }
 
 .container{
-  width: 1200px;
+  width: 1600px;
   align-items: center;
   margin: 0;
   margin-left: auto;
@@ -84,6 +84,7 @@ align-items: center;
 }
 
 .header-tel{
+  width: 110px;
   margin-left: 50px;
   margin-right: 227px;
 }
@@ -115,12 +116,140 @@ margin-right: auto;
   margin-right: auto;
 }
 
+.container .article-list{
+  display: flex;
+}
 
-  
+.article-list{
+  margin: 94px 215px 94px 215px;
+}
+.article-item{
+width: 270px;
+height: 101px;
+}
+
+.article-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.article-title{
+ margin-bottom: 10px;
+}
+
+.whot-we-do-pictures .whot-we-do-picture-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.whot-we-do-pictures-item:not(:last-child){
+margin-right: 30px;
+margin-bottom: 94px;
+}
+
+/* .container-team-pictures  */
+.tean-picture-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tean-picture-item{
+height: 368px;
+display: flex;
+background: #FFFFFF;
+margin-bottom: 94px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.tean-picture-item:not(:last-child){
+  margin-right: 30px;
+
+}
+
+.person-name{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+.person-position{
+display: flex;
+justify-content: center;
+}
+
+.container-team{
+height: 648px;
+background: #F5F4FA;
+padding-top: 94px;
+}
+
+.container .container-footer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.container-footer{
+margin-left:215px;
+}
+
+.footer-logo{
+margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
+}
+/* =================== PORTFOLIO ====================== */
+.main-cointainer{
+width: 1170px;
+height: 1360px;
+position: center;
+margin: 94px auto 94px auto;
+}
+
+.main-container-portfolio{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.list-btn{
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+.portfolio-btn-item{
+  display: flex;
+}
+.portfolio-btn-item:not(:last-child){
+  margin-right: 8px;
+}
+
+.portfolio-category-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-category-item:nth-child(-n + 6){
+margin-bottom: 30px;
+}
+
+.portfolio-category-item:not(:nth-child(3n + 0)){
+  margin-right: 30px;
+}
+
+/* ============== END PORTFOLIO ====================== */
+
 /* =====================   HEADER  ===================== */
-/* ================== LOGO ================ */
+/* ======================== LOGO ===================== */
 
-.logo,
+.logo, 
 .footer-logo{
 /* width: 145px;
 height: 31px; */
@@ -143,6 +272,7 @@ color:var(--color-black);
 .footer-logo {
   color: var(--color-white)
 }
+
 
 /* =================== END LOGO =================== */
 
@@ -205,8 +335,7 @@ color: var(--main-color);
   border-radius: 4px;
   color: #FFFFFF;  
   background: var(--color-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+ }
 
 .conteiner-order-btn:hover,
 .conteiner-order-btn:focus{
@@ -215,23 +344,27 @@ cursor:pointer;
 
 
 .article-title{
+width: 270px;
+height: 16px;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.142;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
+display: flex;
 color: var(--color-black);
 }
 
 .article-text{
+width: 270px;
+height: 75px;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.5;
 letter-spacing: 0.03em;
-display:block;
+display: flex;
 }
 
 .agencja-main-category{
@@ -244,7 +377,10 @@ letter-spacing: 0.03em;
 color: var(--color-black);
 }
 
+
+
 .person-name{
+
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -264,6 +400,28 @@ letter-spacing: 0.03em;
 /* ======================== END CONTENT MAIN ======================= */
 
 /* =============================== PORTFOLIO CONTENT =================== */
+
+.btn-Wszystkie{
+width: 121px;
+height: 38px;
+}
+.btn-Strony{
+width: 93px;
+height: 38px;
+}
+.btn-Aplikacje{
+width: 114px;
+height: 38px;
+}
+.btn-Dizajn{
+width: 91px;
+height: 38px;
+}
+.btn-Marketing{
+width: 121px;
+height: 38px;
+}
+
 .list-btn-item{
 font-weight: 500;
 font-size: 16px;
@@ -272,6 +430,8 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: #212121;
+background: #F5F4FA;
+border-radius: 4px;
 }
 
 .list-btn-item:hover,
@@ -287,6 +447,14 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 border-radius: 4px;
 }
 
+.portfolio-picture-title,
+.portfolio-pictue-name{
+width: 322px;
+height: 36px;
+margin-right: auto;
+margin-left: auto;
+}
+
 .portfolio-picture-title{
 font-style: normal;
 font-weight: 700;
@@ -294,6 +462,8 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-black);
+margin-top: 20px;
+margin-bottom: 4px;
 }
 
 .portfolio-pictue-name{
@@ -309,6 +479,7 @@ letter-spacing: 0.03em;
 /* ==================== FOOTER ==================== */
 .footer .container{
 background-color: var(--color-background);
+height: 252px;
 }
 .footer-address-link{
 text-decoration: none;
@@ -317,8 +488,13 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.5;
 letter-spacing: 0.03em;
+color: var(--main-color)
+}
+
+.footer-address{
 color: var(--color-white);
 }
+
 .footer-address-link[href^="mail"]{
 text-decoration: underline;
 }
