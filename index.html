@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
+
 
 </head>
 
-<body>
+<body class="body">
 
     <header class="header wraper-center">
         <div class="container ">
             <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
             <nav class="navigation">
                 <ul class="navigation-list list">
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item activ-navigation-list-item">
                         <a class="navigation-list-link" href="./index.html">Agencja</a>
                     </li>
                     <li class="navigation-list-item">
@@ -66,7 +68,7 @@
                         <h1 class="conteiner-order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
                     </li>
                     <li class="container-order-item">
-                        <button class="conteiner-order-btn" type="button"> Zamów usługe</button>
+                        <button type="button" class="conteiner-order-btn " data-modal-open> Zamów usługe</button>
                     </li>
                 </ul>
             </div>
@@ -126,11 +128,17 @@
                 <h2 class="title">Czym się zajmujemy</h2>
                 <ul class="whot-we-do-picture-list">
                     <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img.jpg"
-                            alt="Pisanie aplikacji na komputer" width="370" height="294"></li>
+                            alt="Pisanie aplikacji na komputer" width="370" height="294">
+                        <p class="whot-we-do-picture-lable">Aplikacje komputerowe</p>
+                    </li>
                     <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img2.jpg"
-                            alt="Pisanie aplikacji na smartfony" width="370" height="294"></li>
+                            alt="Pisanie aplikacji na smartfony" width="370" height="294">
+                        <p class="whot-we-do-picture-lable">Aplikacje mobilne</p>
+                    </li>
                     <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img3.jpg"
-                            alt="Pisanie aplikacji na tablety" width="370" height="294"></li>
+                            alt="Pisanie aplikacji na tablety" width="370" height="294">
+                        <p class="whot-we-do-picture-lable">Rozwiązania graficzne</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -409,6 +417,19 @@
             </div>
         </div>
     </footer>
-</body>
 
+ <!-- WINDOWS MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button " data-modal-close>
+                <svg class="exit-icon">
+                    <use href="./images/icons.svg#exit-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+</body>
 </html>
