@@ -415,6 +415,25 @@
                 </ul>
 
             </div>
+
+            <div class="footer-newsletter">
+                <h3>Zapisz się do newslettera</h3>
+                <form class="footer-newslatter-form">
+                    <lable class="footer-newslatter-lable">
+                        <input  
+                            type="email" 
+                            name="email" 
+                            class="fotter-nawslatter-input"
+                              placeholder="E-mail" />
+                    </lable>
+
+                    <button type="submit" class="footer-newslatter-but">Zapisz się
+                        <svg class="footer-newsletter-icon">
+                            <use href="./images/icons.svg#footer-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -426,6 +445,78 @@
                     <use href="./images/icons.svg#exit-icon"></use>
                 </svg>
             </button>
+
+            <form class="order-form">
+                <legend class="order-form-caption">Zostaw swoje dane w formularzu poniżej</legend>
+
+                <label class="form-order-lable">
+                    <span class="order-label-text ">Imie</span>
+                    
+                        <div class="wrap-imput">  
+                            <input 
+                                class="order-form-input" 
+                                type="text" 
+                                name="username" 
+                                placeholder=" " />
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#modal-icon-person"></use>                    
+                             </svg>                        
+                        </div>
+                </label>
+
+                <label class="form-order-lable">
+                    <span class="order-label-text">Telefon</span>
+
+                        <div class="wrap-imput ">
+                            <input 
+                                class="order-form-input" 
+                                type="tel" name="phone_number"  
+                                placeholder=" "/>
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#modal-icon-phon"></use>
+                            </svg>
+                        </div>
+                </label>
+
+                <label class="form-order-lable">
+                    <span class="order-label-text">Email</span>
+
+                        <div class="wrap-imput">
+                            <input 
+                            class="order-form-input" 
+                            type="email" 
+                            name="email"   
+                            placeholder=" "/>
+                            <svg class="modal-icon">
+                                <use href="./images/icons.svg#modal-icon-envelope"></use>
+                            </svg>
+                        </div>
+                </label>
+            
+            
+                <lable class="form-order-lable-textare">
+                    <span class="order-label-text">Komenarz</span>
+                    
+                    <textarea class="modal-form-message" 
+                        name="user-message" 
+                        rows="7" 
+                        placeholder="Wprowadź tekst"></textarea>
+                </lable>
+            
+            <div class="policy">
+                <input id="user-policy" 
+                    type="checkbox" 
+                    class="modal-form-policy hidden" 
+                    name="policy" 
+                    value="accept-policy" />
+                <label for="user-policy" class="modal-policy-text">
+                    Oświadczam, iż akceptuję <a href="#regulamin" class="policy-link">Regulamin</a> i
+                    <a href="#policy" class="policy-link">Politykę Prywatności.</a>
+                </label>
+            </div>   
+             
+                <button type="submit" class="modal-send-btn">Wyślij</button>
+            </form>
         </div>
     </div>
 
@@ -433,3 +524,4 @@
 
 </body>
 </html>
+
