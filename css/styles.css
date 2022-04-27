@@ -959,7 +959,9 @@ img {
 }
 
 /*============================ CHECK POPITICK ==============================================*/
-
+.footer-newslatter-form{
+  display: flex;
+}
 .modal-policy-text::before {
   display: inline-block;
   content: "";
@@ -989,7 +991,6 @@ img {
 }
 
 .policy-link {
-  display: inline-block;
   color: var(--color-blue);
   text-decoration: none;
 }
