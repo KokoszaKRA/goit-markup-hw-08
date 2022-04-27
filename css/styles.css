@@ -962,7 +962,13 @@ img {
 .footer-newslatter-form{
   display: flex;
 }
+.modal-policy-text{
+  display: flex;
+}
+
 .modal-policy-text::before {
+
+
   display: inline-block;
   content: "";
   width: 16px;
@@ -992,8 +998,7 @@ img {
 
 .policy-link {
   color: var(--color-blue);
-  text-decoration: none;
-}
+  }
 /*============================ CHECK POPITICK ==============================================*/
 
 /* =============== END WINDOWS MODARN ===================*/
@@ -1092,7 +1097,8 @@ img {
 }
 
 .policy{
-  width: auto;
+  display: flex;
+  min-width: 448px;
   padding-top: 20px;
   text-align: center;
 }
