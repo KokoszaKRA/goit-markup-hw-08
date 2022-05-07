@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
 
 
 </head>
@@ -22,29 +21,22 @@
 
     <header class="header wraper-center">
         <div class="container ">
-            <a class="logo logo--black logo--right" href="./index.html"><span class="logo__span">Web</span>Studio</a>
-            
+            <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
             <nav class="navigation">
-                <ul class="navigation__list list">
-
-                    <li class="navigation__item navigation--activ">
-                        <a class="navigation__link " href="./index.html">Agencja</a>
+                <ul class="navigation-list list">
+                    <li class="navigation-list-item activ-navigation-list-item">
+                        <a class="navigation-list-link" href="./index.html">Agencja</a>
                     </li>
-
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link" href="./portfolio.html">Portfolio</a>
                     </li>
-
-                    <li class="navigation__item">
-                        <a class="navigation__link " href="#">Kontakt</a>
+                    <li class="navigation-list-item">
+                        <a class="navigation-list-link" href="#">Kontakt</a>
                     </li>
-
                 </ul>
             </nav>
-
-            <address class="header-address">                
+            <address class="header-address">
                 <ul class="header-address-list list">
-
                     <li class="header-address-item">
                         <a class="header-address-link  header-mail" href="mailto:info@devstudio.com">
                             <svg class="header-icon icon-envelope">
@@ -53,7 +45,6 @@
                             info@devstudio.com
                         </a>
                     </li>
-
                     <li class="header-address-item">
                         <a class="header-address-link  header-tel" href="tel:+48111111111">
                             <svg class="header-icon icon-phon">
@@ -62,7 +53,6 @@
                             +48 111 111 111
                         </a>
                     </li>
-
                 </ul>
             </address>
         </div>
@@ -73,26 +63,21 @@
         <!-- ORDERS -->
         <section class="section-orders wraper-center">
             <div class="container">
-                <ul class="order__list list">
-                    <li class="order__item">
-                        <h1 class="order__title">
-                            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU 
-                        </h1>
+                <ul class="conteiner-order-list list">
+                    <li class="container-order-item">
+                        <h1 class="conteiner-order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
                     </li>
-                    <li class="order__item">
-                        <button type="button" 
-                                class="order__btn " 
-                                data-modal-open> Zamów usługe
-                        </button>
+                    <li class="container-order-item">
+                        <button type="button" class="conteiner-order-btn " data-modal-open> Zamów usługe</button>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- 4x DISCRIPION     -->
-        <section class="section__discription wraper-center">
+        <section class="section-discription wraper-center">
             <div class="container">
-                <ul class="discriptio__list list">
+                <ul class="article-list list">
 
                     <li class="section-discription-item list">
                         <svg class="discription-icon" width="270" height="120">
@@ -381,9 +366,8 @@
     <!-- FOOTER -->
     <footer class="footer wraper-center">
         <div class="container ">
-
             <div class="footer-adress">
-                <a class="logo logo--light logo--position" href="./index.html"><span class="logo__span">Web</span>Studio</a>
+                <div><a class="footer-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a></div>
                 <address class="footer-address">
                     <ul class="footrt-address-list list">
                         <li class="footrt-address-item "><a class="footer-address-link footer-adres" href="#">m. Warszawa, Aleje
@@ -520,12 +504,12 @@
                 </lable>
             
             <div class="policy">
-                <input id="policy" 
+                <input id="user-policy" 
                     type="checkbox" 
                     class="modal-form-policy hidden" 
                     name="policy" 
                     value="accept-policy" />
-                <label for="policy" id="policy" class="modal-policy-text">
+                <label for="policy" id="user-policy" class="modal-policy-text">
                     Oświadczam iż akceptuję&nbsp;
                     <a href="#" class="policy-link">Regulamin</a>&nbsp;i&nbsp;
                     <a href="#" class="policy-link">Politykę Prywatności.</a>

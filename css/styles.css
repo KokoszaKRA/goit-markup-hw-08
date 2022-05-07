@@ -1,8 +1,88 @@
+:root {
+  --main-font: font-family: 'Roboto', sans-serif;
+  ;
+  --secondery-font: font-family: 'Raleway', sans-serif;
+  --main-color: #757575;
+  --color-black: #212121;
+  --color-blue: #2196F3;
+  --color-background: #2F303A;
+  --color-white: #FFF;
+}
+
+body {
+  font-family: 'Roboto';
+  color: #757575;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: none;
+}
+
+.container {
+  width: 1200px;
+  /* align-items: center; */
+  padding: 0 15px;
+}
+
+.wraper-center {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
 
 
 /* ============ HEDER ============== */
 /*===========  NAVIGATION ============ */
-.navigation__link,
+/* ================= NAVIGATION ===============  */
+.navigation-list-link,
 .header-address-link {
   text-decoration: none;
   font-style: normal;
@@ -16,8 +96,8 @@
 
 .footer-address-link:hover,
 .footer-address-link:focus,
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   cursor: pointer;
   color: var(--color-blue);
 }
@@ -44,29 +124,31 @@
   display: flex;
 }
 
-.navigation__list {
+.navigation-list {
   display: flex;
   align-items: center;
 }
 
+.logo {
+  padding-right: 93px;
+}
 
-
-.navigation__item:not(:last-child) {
+.navigation-list-item:not(:last-child) {
   margin-right: 46px;
 }
 
-.navigation__link {
+.navigation-list-link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.navigation__item{
+.navigation-list-item{
   position: relative;
 }
 
-.navigation--activ::after{
+.activ-navigation-list-item::after{
   content: "";  
 
   position:absolute;
@@ -152,18 +234,18 @@
 
 }
 
-.order__list {
+.conteiner-order-list {
   height: 600px;
   display: flex;
   flex-direction: column;
 }
 
-.order__item {
+.container-order-item {
   display: flex;
   justify-content: center;
 }
 
-.order__title {
+.conteiner-order-title {
   width: 696px;
   height: 120px;
   margin-top: 200px;
@@ -179,7 +261,7 @@
   color: var(--color-white);
 }
 
-.order__btn {
+.conteiner-order-btn {
   margin-bottom: 200px;
 
   width: 200px;
@@ -191,8 +273,8 @@
   border: none;
 }
 
-.order__btn:hover,
-.order__btn:focus {
+.conteiner-order-btn:hover,
+.conteiner-order-btn:focus {
   cursor: pointer;
 }
 
@@ -204,23 +286,23 @@
 
 
 /* =============== DISCRIPTION 4X   ================ */
-.discriptio__list {
+.article-list {
   display: flex;
 }
 
-.section__discription {
+.section-discription {
   margin-top: 94px;
   margin-bottom: 94px;
 }
 
 
-.section__discription-item {
+.section-discription-item {
   display: flex;
   flex-direction: column;
   padding: 0 auto;
 }
 
-.section__discription-item:not(:last-child){
+.section-discription-item:not(:last-child){
   margin-right: 30px;
 }
 
@@ -415,6 +497,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.customers-logo{
+  width: 106px;
+  height: 60px;
+}
 
 .customers_link:hover,
 .customers_link:focus{
@@ -426,10 +512,29 @@
 
 /* =================== END CUSTOMERS =====================*/
 
-.customers-logo{
-  width: 106px;
-  height: 60px;
+/* ======================= LOGO ======================= */
+
+.logo,
+.footer-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
 }
+
+.logo-span {
+  color: var(--color-blue);
+}
+
+.footer-logo {
+  color: var(--color-white)
+}
+
+/* =================== END LOGO =================== */
 
 
 
@@ -662,7 +767,11 @@
   display: flex;
 }
 
-
+.footer-logo {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
 .footer-social-list{
   display: flex;
@@ -809,7 +918,7 @@
 
 .modal{
   position: absolute;
-  width: 528px;
+  min-width: 528px;
   height: 581px;
   left: 50%;
   top: 50%;
@@ -836,6 +945,12 @@
 
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden; 
+  pointer-events: none;
 }
 
 .exit-icon{
