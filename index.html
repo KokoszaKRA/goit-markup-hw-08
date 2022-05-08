@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.css"/>
 
 
@@ -21,9 +21,10 @@
 <body class="body">
 
     <header class="header wraper-center">
-        <div class="container ">
+        <div class="container">
+            <!-- logo -->
             <a class="logo logo--black logo--right" href="./index.html"><span class="logo__span">Web</span>Studio</a>
-            
+            <!-- nawigacja -->
             <nav class="navigation">
                 <ul class="navigation__list list">
 
@@ -41,6 +42,7 @@
 
                 </ul>
             </nav>
+            <!-- end nawigacja -->
 
             <address class="header-address">                
                 <ul class="header-address-list list">
@@ -90,46 +92,47 @@
         </section>
 
         <!-- 4x DISCRIPION     -->
-        <section class="section__discription wraper-center">
+        <section class="discription wraper-center">
+            
             <div class="container">
-                <ul class="discriptio__list list">
+                <ul class="discription__list list">
 
-                    <li class="section-discription-item list">
-                        <svg class="discription-icon" width="270" height="120">
+                    <li class="discription-card list">
+                        <svg class="discription-card__icon">
                             <use href="./images/icons.svg#icon-antenna1"></use>
                         </svg> 
-                        <h3 class="article-title">LOREM IPSUM</h3>
-                        <p class="article-text">Lorem ipsum dolor sit amet, consectetur
+                        <h3 class="discription-card__title">LOREM IPSUM</h3>
+                        <p class="discription-card__text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Nam vel arcu sem. Sed
                             non sodales dui. Interdum et malesuada</p>
                     </li>
 
-                    <li class="section-discription-item list">
-                        <svg class="discription-icon" width="270" height="120">
+                    <li class="discription-card list">
+                        <svg class="discription-card__icon">
                             <use href="./images/icons.svg#icon-clock2"></use>
                         </svg>
-                        <h3 class="article-title">LOREM IPSUM</h3>
-                        <p class="article-text">Lorem ipsum dolor sit amet, consectetur
+                        <h3 class="discription-card__title">LOREM IPSUM</h3>
+                        <p class="discription-card__text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Nam vel arcu sem. Sed
                             non sodales dui. Interdum et malesuada</p>
                     </li>
 
-                    <li class="section-discription-item list">
-                        <svg class="discription-icon" width="270" height="120">
+                    <li class="discription-card list">
+                        <svg class="discription-card__icon">
                             <use href="./images/icons.svg#icon-laptop3"></use>
                         </svg>
-                        <h3 class="article-title">LOREM IPSUM</h3>
-                        <p class="article-text">Lorem ipsum dolor sit amet, consectetur
+                        <h3 class="discription-card__title">LOREM IPSUM</h3>
+                        <p class="discription-card__text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Nam vel arcu sem. Sed
                             non sodales dui. Interdum et malesuada</p>
                     </li>
 
-                    <li class="section-discription-item list">
-                        <svg class="discription-icon" width="270" height="120">
+                    <li class="discription-card list">
+                        <svg class="discription-card__icon">
                             <use href="./images/icons.svg#icon-astronaut4"></use>
                         </svg>
-                        <h3 class="article-title ">LOREM IPSUM</h3>
-                        <p class="article-text ">Lorem ipsum dolor sit amet, consectetur
+                        <h3 class="discription-card__title ">LOREM IPSUM</h3>
+                        <p class="discription-card__text ">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Nam vel arcu sem. Sed
                             non sodales dui. Interdum et malesuada</p>
                     </li>
@@ -137,39 +140,46 @@
             </div>
         </section>
 
-        <!-- WHOT WE DO          -->
-        <section class="section-whot-we-do wraper-center">
+        <!-- WHAT WE DO          -->
+        <section class="what-we-do wraper-center">
             <div class="container">
                 <h2 class="title">Czym się zajmujemy</h2>
-                <ul class="whot-we-do-picture-list">
-                    <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img.jpg"
+
+                <ul class="what-we-do--list">
+
+                    <li class="what-we-do-card"><img src="./images/what_we_do/what_we_do_img.jpg"
                             alt="Pisanie aplikacji na komputer" width="370" height="294">
-                        <p class="whot-we-do-picture-lable">Aplikacje komputerowe</p>
+                        <p class="what-we-do-card__lable what-we-do-card__lable--position">Aplikacje komputerowe</p>
                     </li>
-                    <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img2.jpg"
+
+                    <li class="what-we-do-card"><img src="./images/what_we_do/what_we_do_img2.jpg"
                             alt="Pisanie aplikacji na smartfony" width="370" height="294">
-                        <p class="whot-we-do-picture-lable">Aplikacje mobilne</p>
+                        <p class="what-we-do-card__lable what-we-do-card__lable--position">Aplikacje mobilne</p>
                     </li>
-                    <li class="whot-we-do-picture-item"><img src="./images/what_we_do/what_we_do_img3.jpg"
+
+                    <li class="what-we-do-card"><img src="./images/what_we_do/what_we_do_img3.jpg"
                             alt="Pisanie aplikacji na tablety" width="370" height="294">
-                        <p class="whot-we-do-picture-lable">Rozwiązania graficzne</p>
+                        <p class="what-we-do-card__lable what-we-do-card__lable--position">Rozwiązania graficzne</p>
                     </li>
+
                 </ul>
+
             </div>
         </section>
 
         <!-- TEAM -->
-        <section class="section-team wraper-center">
+        <section class="team wraper-center">
             <div class="container">
                 <h2 class="title">Nasz zaspół</h2>
-                <ul class="tean-picture-list list wraper-center">
-                    <li class="section-team-item wraper-center">
+                <ul class="team__list list wraper-center">
+
+                    <li class="team-card wraper-center">
                         <figure>
                             <img src="./images/team/team_img1.jpg" alt="Zdjęcie John Doe" width="270" height="260">
                             <figcaption>
-                                <h3 class="person-name">John Doe</h3>
-                                <p class="person-position">Product Designer</p>
-                                <ul class="team-social-list list">
+                                <h3 class="team-card__name">John Doe</h3>
+                                <p class="team-card__position">Product Designer</p>
+                                <ul class="team-card__social--position list">
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -201,15 +211,15 @@
                                 </ul>
                             </figcaption>
                         </figure>
-
                     </li>
-                    <li class="section-team-item wraper-center">
+
+                    <li class="team-card wraper-center">
                         <figure>
                             <img src="./images/team/team_img2.jpg" alt="Zdjęcie John Doe" width="270" height="260">
                             <figcaption>
-                                <h3 class="person-name">John Doe</h3>
-                                <p class="person-position">Frontend Developer</p>
-                                <ul class="team-social-list list">
+                                <h3 class="team-card__name">John Doe</h3>
+                                <p class="team-card__position">Frontend Developer</p>
+                                <ul class="team-card__social--position list">
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -241,15 +251,16 @@
                                 </ul>
                             </figcaption>
                         </figure>
-
                     </li>
-                    <li class="section-team-item wraper-center">
+
+                    <li class="team-card wraper-center">
                         <figure>
                             <img src="./images/team/team_img3.jpg" alt="Zdjęcie John Doe" width="270" height="260">
                             <figcaption>
-                                <h3 class="person-name">John Doe</h3>
-                                <p class="person-position">Marketing</p>
-                                <ul class="team-social-list list">
+                                <h3 class="team-card__name">John Doe</h3>
+                                <p class="team-card__position">Marketing</p>
+                                <ul class="team-card__social--position list">
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -257,6 +268,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -264,6 +276,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -271,6 +284,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -281,15 +295,17 @@
                                 </ul>
                             </figcaption>
                         </figure>
-
                     </li>
-                    <li class="section-team-item wraper-center">
+
+                    <li class="team-card wraper-center">
                         <figure>
                             <img src="./images/team/team_img4.jpg" alt="Zdjęcie John Doe" width="270" height="260">
                             <figcaption>
-                                <h3 class="person-name">John Doe</h3>
-                                <p class="person-position">UI Designer</p>
-                                <ul class="team-social-list list">
+                                <h3 class="team-card__name">John Doe</h3>
+                                <p class="team-card__position">UI Designer</p>
+
+                                <ul class="team-card__social--position list">
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -297,6 +313,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -304,6 +321,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -311,6 +329,7 @@
                                             </svg>
                                         </a>
                                     </li>
+
                                     <li class="team-social-item">
                                         <a class="social_link" href="#">
                                             <svg class="team-social-icon">
@@ -327,48 +346,48 @@
         </section>
 
         <!-- OUER CUSTOMERS -->
-        <section class="section-customers wraper-center">
+        <section class="customers wraper-center">
             <div class="container ">
                 <h2 class="title">Nasi klienci</h2>
-                <ul class="customers-list list">
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                <ul class="customers__list--position list">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customers-item">
-                        <a class="customers_link" href="#">
-                            <svg class="customers-logo">
+                    <li class="customers-logo">
+                        <a class="customers-logo__link" href="#">
+                            <svg class="customers-logo__svg">
                                 <use href="./images/icons.svg#icon-client6"></use>
                             </svg>
                         </a>

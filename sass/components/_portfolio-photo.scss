@@ -1,0 +1,98 @@
+.portfolio-main{
+    padding-bottom: 94px;
+  }
+  
+  .portfolio-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1170px;
+  }
+  
+  .portfolio-category-items{
+    flex-basis: auto;
+    border: 1px solid #eeeeee;
+    margin-top: 30px;
+    max-width: 370px;
+  
+    transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, backgroud cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  
+  
+  .portfolio-category-items:hover,
+  .portfolio-category-items:focus{
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .portfolio-category-items:hover .portfolio-categori-overlay{
+    transform: translatey(0);
+  }
+  
+  .categori-picture-box{
+    position:relative;
+    overflow: hidden;
+  }
+  
+  .categori-picture-box .portfolio-categori-overlay{
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .portfolio-categori-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 49px 45px 49px 24px;
+  
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+  
+    background: rgba(33, 150, 243, 0.9);
+  }
+  
+  
+  
+  .portfolio-categori-overlay > p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+  
+    color: #FFFFFF;
+  }
+  
+  .portfolio-picture {
+    border: 0px solid #eeeeee;
+  }
+  
+  .portfolio-picture-title {
+    border-top: 1px solid #eeeeee;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    padding-left: 24px;
+    padding-top: 20px;
+  
+    color: var(--color-black);
+  }
+  
+  .portfolio-pictue-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    color: var(--text-color-grey)
+  }

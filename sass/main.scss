@@ -1,5 +1,30 @@
+@import "./layout/windows-modarn";
 @import "./utils/is-hiden";
 
-@import "./base/common" ;
-@import "./base/container" ;
-@import "./components/logo"
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/logo";
+@import "./components/discription-card";
+@import "./components/what-we-do-cards";
+@import "./components/team-card";
+@import "./components/team-btm";
+@import "./components/customer-logo";
+@import "./components/footer-addrees";
+@import "./components/footer-newsletter";
+@import "./components/footer-social";
+@import "./components/portfolio-btn";
+@import "./components/portfolio-photo";
+
+
+@import "./layout/orders";
+@import "./layout/header-address";
+@import "./layout/header";
+@import "./layout/orders";
+@import "./layout/navigation";
+@import "./layout/discription";
+@import "./layout/what-we-do";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+
