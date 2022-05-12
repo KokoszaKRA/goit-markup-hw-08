@@ -1,5 +1,6 @@
 @import "./layout/windows-modarn";
 @import "./utils/is-hiden";
+@import "./utils/varibles.scss";
 
 @import "./base/common";
 @import "./base/container";
@@ -13,9 +14,9 @@
 @import "./components/footer-addrees";
 @import "./components/footer-newsletter";
 @import "./components/footer-social";
-@import "./components/portfolio-btn";
 @import "./components/portfolio-photo";
-
+@import "./components/index-title";
+@import "./components/btn";
 
 @import "./layout/orders";
 @import "./layout/header-address";
@@ -27,4 +28,6 @@
 @import "./layout/team";
 @import "./layout/customers";
 @import "./layout/footer";
+@import "./layout/portfolio-btn";
+@import "./layout/portfolio-pisture";
 

@@ -1,0 +1,107 @@
+.footer-newslatter__btn{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    padding-right: 42px;
+    padding-left: 0px;
+    margin-left: 8px;
+    
+    background: var(--color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;  
+  
+    color: #FFFFFF;
+
+    & >.footer-newsletter__icon{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 13px;
+        right: 28px;
+       
+        fill: var(--color-white);
+      }
+  }
+
+  .order__btn {
+    margin-bottom: 200px;
+  
+    width: 200px;
+    height: 50px;
+    color: var(--color-white);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+}
+  
+.portfolio-categori{
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    color: #212121;
+  
+    transition-property: background, color, box-shadow, border-radius;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition-duration:250ms;
+
+    &--wszystkie {
+      width: 121px;
+      height: 38px;
+    }
+    
+    &--strony {
+      width: 93px;
+      height: 38px;
+    }
+    
+    &--aplikacje {
+      width: 114px;
+      height: 38px;
+    
+    }
+    
+    &--dizajn {
+      width: 91px;
+      height: 38px;
+    }
+    
+    &--marketing {
+      width: 121px;
+      height: 38px;
+    }
+
+  }
+  
+  &__btn:hover,
+  &__btn:focus {
+    cursor: pointer;
+  
+    background: var(--color-blue);
+    color: var(--color-white);
+  
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+  

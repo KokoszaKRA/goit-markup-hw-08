@@ -1,4 +1,4 @@
-.footer-social-icon{
+.footer-social__icon{
     width: 20px;
     height: 20px;
   }
@@ -10,24 +10,13 @@
     margin-top: 70px;
   }
   
-  .footer-title-icon{
-    margin-bottom: 20px;
-    height: 16px;
   
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
   
-    color: var(--color-white);
-  }
-  
-  .footer-social-item:not(:last-child){
+  .footer-social__item:not(:last-child){
     margin-right: 10px;
   }
   
-  .footer-social_link{
+  .footer-social__link{
     display: flex;
     width: 44px;
     height: 44px;
@@ -40,8 +29,8 @@
     transition: background-color 250ms;
   }
   
-  .footer-social_link:hover,
-  .footer-social_link:focus{
+  .footer-social__link:hover,
+  .footer-social__link:focus{
     background-color: var(--color-blue);
    }
   

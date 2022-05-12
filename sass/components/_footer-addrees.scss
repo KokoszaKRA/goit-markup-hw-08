@@ -1,12 +1,16 @@
-.footrt-address-item:not(:last-child) {
+.footer-address{  
+  &__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  .footrt-address-item:last-child{
+  &__item:last-child{
     margin-bottom: 60px;
   }
 
-  .footer-address-link {
+  &__item{
+    min-width: 264px;
+  }
 
+  &__link {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
@@ -17,23 +21,22 @@
   
     transition-property: color;
     transition-duration: 500ms;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    cursor: pointer;
+    color: var(--color-blue);
   }
-  
-  .footer-adres{
+
+  &--white{
     color:var(--color-white);
-    
   }
-  
-  .footrt-address-item{
-    min-width: 264px;
-  }
-  .footer-address-link[href^="mail"] {
+  &--underline{
     text-decoration: underline;
   }
-  
-  .footer-address-link:hover,
-.footer-address-link:focus{
-  cursor: pointer;
-  color: var(--color-blue);
+  }
 }
+
+  
+
