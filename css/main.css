@@ -719,6 +719,7 @@ img {
   border: none;
   border-radius: 4px;
   color: #212121;
+  border: none;
   transition-property: background, color, box-shadow, border-radius;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
