@@ -1,4 +1,16 @@
-.customers{
+// Mobile
+@media only screen and (min-width:480px){
+
+}
+
+// Mobile landscape
+@media only screen and (min-width:480px){
+
+}
+
+// Desktop
+@media only screen and (min-width:480px){
+  .customers{
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -8,4 +20,6 @@
       justify-content: space-between;
     }
   }
-  
+}
+
+  // 480px, 768px i 1200px.
