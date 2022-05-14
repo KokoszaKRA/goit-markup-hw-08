@@ -8,8 +8,6 @@
     }
   }
 
-  
-  
   .wraper-center {
     display: flex;
     justify-content: center;
@@ -17,4 +15,17 @@
 
   .portfolio-main{
     padding-bottom: 94px;
+  }
+
+  .orders-form__input--wrap{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .policy--wrap{
+    display: flex;
+    min-width: 448px;
+    padding-top: 20px;
+    text-align: center;
   }

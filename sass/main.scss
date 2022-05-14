@@ -1,6 +1,8 @@
 @import "./layout/windows-modarn";
+
 @import "./utils/is-hiden";
 @import "./utils/varibles.scss";
+@import "./utils/hiden";
 
 @import "./base/common";
 @import "./base/container";
@@ -17,6 +19,8 @@
 @import "./components/portfolio-photo";
 @import "./components/index-title";
 @import "./components/btn";
+@import "./components/orderl-form";
+@import "./components/check-plicy";
 
 @import "./layout/orders";
 @import "./layout/header-address";
@@ -30,4 +34,3 @@
 @import "./layout/footer";
 @import "./layout/portfolio-btn";
 @import "./layout/portfolio-pisture";
-

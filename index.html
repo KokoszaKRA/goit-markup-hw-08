@@ -83,7 +83,7 @@
                     </li>
                     <li class="order__item">
                         <button type="button" 
-                                class="order__btn" 
+                                class="order__btn " 
                                 data-modal-open> Zamów usługe
                         </button>
                     </li>
@@ -474,86 +474,86 @@
         </div>
     </footer>
 
- <!-- WINDOWS MODAL -->
+ <!---------------------- WINDOWS MODAL -------------------------------------------->
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="close-button " data-modal-close>
-                <svg class="exit-icon">
+        <div class="backdrop-modal">
+            <button type="button" class="backdrop__btn " data-modal-close>
+                <svg class="backdrop__btn--exit">
                     <use href="./images/icons.svg#exit-icon"></use>
                 </svg>
             </button>
 
-            <form class="order-form">
-                <legend class="order-form-caption">Zostaw swoje dane w formularzu poniżej</legend>
+            <form class="orders-form">
+                <legend class="orders-form__caption">Zostaw swoje dane w formularzu poniżej</legend>
 
-                <label class="form-order-lable">
-                    <span class="order-label-text ">Imie</span>
+                <label class="orders-form__lable">
+                    <span class="orders-foem__text">Imie</span>
                     
-                        <div class="wrap-imput">  
+                        <div class="orders-form__input--wrap">  
                             <input 
-                                class="order-form-input" 
+                                class="orders-form__input" 
                                 type="text" 
                                 name="username" 
                                 placeholder=" " />
-                            <svg class="modal-icon">
+                            <svg class="orders-form__icon">
                                 <use href="./images/icons.svg#modal-icon-person"></use>                    
                              </svg>                        
                         </div>
                 </label>
 
-                <label class="form-order-lable">
-                    <span class="order-label-text">Telefon</span>
+                <label class="orders-form__lable">
+                    <span class="orders-foem__text">Telefon</span>
 
-                        <div class="wrap-imput ">
+                        <div class="orders-form__input--wrap">
                             <input 
-                                class="order-form-input" 
+                                class="orders-form__input" 
                                 type="tel" name="phone_number"  
                                 placeholder=" "/>
-                            <svg class="modal-icon">
+                            <svg class="orders-form__icon">
                                 <use href="./images/icons.svg#modal-icon-phon"></use>
                             </svg>
                         </div>
                 </label>
 
-                <label class="form-order-lable">
-                    <span class="order-label-text">Email</span>
+                <label class="orders-form__lable">
+                    <span class="orders-foem__text">Email</span>
 
-                        <div class="wrap-imput">
+                        <div class="orders-form__input--wrap">
                             <input 
-                            class="order-form-input" 
+                            class="orders-form__input" 
                             type="email" 
                             name="email"   
                             placeholder=" "/>
-                            <svg class="modal-icon">
+                            <svg class="orders-form__icon">
                                 <use href="./images/icons.svg#modal-icon-envelope"></use>
                             </svg>
                         </div>
                 </label>
             
             
-                <lable class="form-order-lable-textare">
-                    <span class="order-label-text">Komenarz</span>
+                <lable class="orders-form__lable-textare">
+                    <span class="orders-foem__text">Komenarz</span>
                     
-                    <textarea class="modal-form-message" 
+                    <textarea class="orders-form__message" 
                         name="user-message" 
                         rows="7" 
                         placeholder="Wprowadź tekst"></textarea>
                 </lable>
             
-            <div class="policy">
+            <div class="policy policy--wrap">
                 <input id="policy" 
                     type="checkbox" 
-                    class="modal-form-policy hidden" 
+                    class="policy__checkbox hidden" 
                     name="policy" 
                     value="accept-policy" />
-                <label for="policy" id="policy" class="modal-policy-text">
-                    Oświadczam iż akceptuję&nbsp;&nbsp;
-                    <a href="#" class="policy-link">Regulamin</a>&nbsp;i&nbsp;
-                    <a href="#" class="policy-link">Politykę Prywatności.</a>
+                <label for="policy" id="policy" class="policy__text">
+                    Oświadczam iż akceptuję&nbsp;
+                    <a href="#" class="policy__link">Regulamin</a>&nbsp;i&nbsp;
+                    <a href="#" class="policy__link">Politykę Prywatności.</a>
                 </label>
             </div>   
              
-                <button type="submit" class="modal-send-btn">Wyślij</button>
+                <button type="submit" class="modal-send__btn">Wyślij</button>
             </form>
         </div>
     </div>
