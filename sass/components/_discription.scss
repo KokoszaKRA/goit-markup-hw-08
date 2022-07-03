@@ -1,0 +1,33 @@
+.discription {
+    display: flex;
+    justify-content: space-between;
+    
+    &__item{
+        max-width: 270px;
+    }
+    
+    &__item--margin-right:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    &__title {
+        margin-bottom: 10px;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        display: block;
+        
+        &--color-grey{
+            color: var(--second-color);
+        }
+    }
+}

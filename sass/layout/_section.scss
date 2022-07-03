@@ -1,0 +1,55 @@
+.section{
+    
+    &-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* outline: 2px dashed rgb(37, 190, 37); */
+    }
+
+    &-portfolio{
+        padding-top: 94px;
+        padding-bottom: 94px;
+        /* outline: 2px dashed rgb(37, 190, 37); */
+    }
+
+    &-discription{
+        padding-top: 94px;
+        /* outline: 2px dashed rgb(37, 190, 37); */
+    }
+
+    &-team{
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background-color: var(--color-backdroud-second);
+        /* outline: 2px dashed rgb(37, 190, 37); */
+    }
+
+    &-what-we-do,
+    &-customers{
+        padding-top: 94px;
+        padding-bottom: 94px;
+        /* outline: 2px dashed rgb(37, 190, 37); */
+    } 
+
+    &__heading {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        margin-bottom: 50px;
+    }
+
+    &-modal{
+        padding: 40px;
+    }
+
+    &-header{
+        padding-top: 24px;
+        padding-bottom: 25px;  
+        border-bottom: 1px solid #ECECEC;
+        /* outline: 2px dashed rgb(37, 190, 37); */
+    }
+
+}

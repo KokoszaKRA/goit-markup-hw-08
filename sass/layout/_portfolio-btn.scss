@@ -1,18 +1,9 @@
-.portfolio-categori{
-    margin-top: 94px;
-    margin-bottom: 50px;
-
-    &__list{
-      display: flex;
-      justify-content: center;
-    }
+.portfolio-btns {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
     
-    &__item:not(:last-child){
-      margin-right: 8px;
+    &__item:not(:last-child) {
+        margin-right: 8px;
     }
-  }
-  
-
-
-
-  
+}

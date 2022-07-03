@@ -1,0 +1,21 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px dashed #f44336; */
+}
+
+.section{
+
+  &-header .container{
+    display: flex;
+    align-items: center;
+    /* outline: 2px dashed rgb(37, 190, 37); */
+  }
+  
+  &-footer .container{
+    display: flex;
+  }
+}
+
