@@ -1,6 +1,5 @@
 .customers{
-    display: flex;
-    justify-content: space-between;
+
   
   
   &__link{
@@ -31,3 +30,31 @@
   }
 }
   
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+  .customers{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+    
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+  .customers{
+
+  }
+    
+}
+
+@media screen and (min-width:1200px) {
+  .customers{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

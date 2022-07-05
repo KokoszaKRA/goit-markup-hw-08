@@ -3,53 +3,130 @@
     &-footer{
     padding-top: 60px;
     padding-bottom: 60px;
-    /* outline: 2px dashed rgb(37, 190, 37); */
+     outline: 2px dashed rgb(37, 190, 37); 
+     
     }
 
-    &-portfolio{
-        padding-top: 94px;
-        padding-bottom: 94px;
-        /* outline: 2px dashed rgb(37, 190, 37); */
-    }
 
-    &-discription{
-        padding-top: 94px;
-        /* outline: 2px dashed rgb(37, 190, 37); */
-    }
 
     &-team{
-        padding-top: 94px;
-        padding-bottom: 94px;
+        &--backgroud-color{
         background-color: var(--color-backdroud-second);
         /* outline: 2px dashed rgb(37, 190, 37); */
     }
+    }
 
+    &-team,
+    &-portfolio,
     &-what-we-do,
     &-customers{
         padding-top: 94px;
         padding-bottom: 94px;
-        /* outline: 2px dashed rgb(37, 190, 37); */
-    } 
+         outline: 2px dashed rgb(37, 190, 37);
+         
+    }
+    
+    &-what-we-do{
+        display: none;
+    }
 
     &__heading {
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.166;
+        font-size: 28px;
+        line-height: 1.178;  
         text-align: center;
         letter-spacing: 0.03em;
+
+        margin-bottom: 30px;
+    }
+
+    &__heading {
         
-        margin-bottom: 50px;
     }
 
     &-modal{
         padding: 40px;
     }
-
-    &-header{
-        padding-top: 24px;
-        padding-bottom: 25px;  
-        border-bottom: 1px solid #ECECEC;
-        /* outline: 2px dashed rgb(37, 190, 37); */
+    
+    &-order{
+        padding-top: 118px;
+        padding-bottom: 198px;
+        text-align: center;        
+        margin: auto; 
+        
+        &__btn {
+            margin-top: 30px;
+        }
     }
 
+    &-header{        
+        border-bottom: 1px solid #ECECEC;
+         outline: 2px dashed rgb(37, 190, 37); 
+    }
+
+
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+    .section{
+        &-order{
+            max-width: 480px;      
+            }       
+
+        &-header{
+            padding: 16px 0;
+        }
+
+        &-discription{
+            padding-bottom: 60px;     
+        }
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .section{
+        &-order{
+            max-width: 768px;      
+        }
+       
+        &-header{
+            padding-top: 21px;
+            padding-bottom: 21px;  
+        }
+
+        &-discription{
+            padding-bottom: 30px;     
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section{
+        &-order{
+            padding-top: 200px;
+            padding-bottom: 200px;
+            max-width: 1600px;;
+        }
+
+        &-header{
+            padding-top: 24px;
+            padding-bottom: 25px;  
+        }
+
+        &-discription{
+            padding-top: 94px;
+             outline: 2px dashed rgb(37, 190, 37);         
+        }
+
+        &-what-we-do{
+            display: block;
+        }
+
+        &__heading{
+            font-size: 36px;
+            line-height: 1.166;
+            margin-bottom: 50px;
+        }
+    }
 }
