@@ -4,14 +4,13 @@
     &__btn{
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-left: 12px;
-        
+        justify-content: center;       
         border-radius: 4px;
     }
 
     &__title{
-        margin-top: 12px;
+        text-align: center;
+        margin-top: 60px;
         margin-bottom: 20px;
         font-size: 14px;
         line-height: 1.142;
@@ -27,7 +26,7 @@
         }        
         
         &__link {
-            display: block;
+            // display: block;
             width: 264px;
             font-size: 14px;
             line-height: 1.5;
@@ -72,4 +71,114 @@
             color: var(--color-white);
         }
     }   
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+    .footer{
+
+        &__wrap{     
+            display: block;
+            text-align: center;
+        }
+
+        &__btn{            
+            margin-top: 20px;
+        }
+
+        &-address{ 
+
+            &__link{
+                text-align: center;
+            }
+            
+            &__list{
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+            }
+        }
+
+        &-newsletter{
+            &__form{
+                display: block;
+            }
+    
+            &__form {
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }    
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+
+    .footer{
+        &__wrap{
+              display: flex;
+              justify-content: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+        }
+        &__title--margin-top{
+            margin-top: 5px;
+        }
+
+        &__btn{
+            margin-top: 20px;
+        }
+
+        &-address__link{
+            text-align: center;
+        }
+
+        &-information{
+            margin-left: 61px;  
+        }
+        
+        &-address__list{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+        
+        &-newsletter{
+            margin-left: auto;
+            margin-right: auto;
+    
+            &__form {
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+    .footer{
+        &__wrap{
+            display: flex;
+          }
+
+        
+        &__link {
+            display: block;
+        }
+
+        &-address__link{
+            text-align:left;
+        }       
+         &__title{
+            text-align: left;
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+
+        &__btn{
+            margin-left: 12px;
+        }
+    }
 }

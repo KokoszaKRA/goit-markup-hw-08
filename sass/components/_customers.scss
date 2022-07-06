@@ -1,13 +1,11 @@
-.customers{
-
-  
+.customers{ 
   
   &__link{
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 170px;
-    height: 92px;
+    // width: 170px;
+    // height: 92px;
     fill: var(--color-icon);
     border: 1px solid var(--color-icon);
     box-sizing: border-box;
@@ -21,8 +19,12 @@
       &:focus{
         fill: var(--color-blue);
         border: 1px solid var(--color-blue);
-      }
   }
+
+  &_item{
+    height: 92px;
+  }
+}
   
   &__logo{
     width: 106px;
@@ -33,20 +35,41 @@
 
 @media screen and (min-width:480px) and (max-width: 767px) {
   .customers{
-    padding-bottom: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
+
+    // &_link{
+    //   width: 210px;
+    //   height: 92px;
+    // }
+
+    &__item{
+      width: 210px;
+      margin-right: 30px;
+      margin-bottom: 30px;            
+  }
   }
     
 }
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
   .customers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin-right: -30px;
+    margin-bottom: -30px;
 
+    &__item{
+      width: 226px;
+      margin-right: 30px;
+      margin-bottom: 30px;            
+    }
   }
     
 }
@@ -55,6 +78,11 @@
   .customers{
     display: flex;
     justify-content: space-between;
+    
+    &__link{
+      width:  170px;
+      height: 92px;
+    }
   }
 
 }

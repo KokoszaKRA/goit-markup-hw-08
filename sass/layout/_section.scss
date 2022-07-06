@@ -20,10 +20,9 @@
     &-portfolio,
     &-what-we-do,
     &-customers{
-        padding-top: 94px;
-        padding-bottom: 94px;
-         outline: 2px dashed rgb(37, 190, 37);
-         
+        padding-top: 60px;
+        padding-bottom: 60px;
+         outline: 2px dashed rgb(37, 190, 37);         
     }
     
     &-what-we-do{
@@ -40,15 +39,12 @@
         margin-bottom: 30px;
     }
 
-    &__heading {
-        
-    }
-
     &-modal{
         padding: 40px;
     }
     
     &-order{
+        width: 100%;
         padding-top: 118px;
         padding-bottom: 198px;
         text-align: center;        
@@ -78,7 +74,8 @@
         }
 
         &-discription{
-            padding-bottom: 60px;     
+            padding-bottom: 60px;
+                
         }
 
     }
@@ -96,8 +93,11 @@
         }
 
         &-discription{
-            padding-bottom: 30px;     
+            padding-top: 60px;
+            padding-bottom: 45px; 
         }
+
+
     }
 }
 
@@ -106,7 +106,7 @@
         &-order{
             padding-top: 200px;
             padding-bottom: 200px;
-            max-width: 1600px;;
+            max-width: 1600px;
         }
 
         &-header{
@@ -127,6 +127,16 @@
             font-size: 36px;
             line-height: 1.166;
             margin-bottom: 50px;
+        }
+
+        &-team,
+        &-portfolio,
+        &-what-we-do,
+        &-customers{
+            padding-top: 94px;
+            padding-bottom: 94px;
+             outline: 2px dashed rgb(37, 190, 37);
+             
         }
     }
 }
