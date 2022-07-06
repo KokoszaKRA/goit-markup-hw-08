@@ -1263,30 +1263,28 @@ img {
 
 .portfolio-btns {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .portfolio-btns__item:not(:last-child) {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .portfolio-btns {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-bottom: 40px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-btns {
     padding-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-btns {
     padding-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
