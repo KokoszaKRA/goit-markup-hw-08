@@ -1,12 +1,40 @@
 .section{
-    
-    &-footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-     outline: 2px dashed rgb(37, 190, 37); 
-     
+    &__heading {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.178;  
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        margin-bottom: 30px;
     }
 
+    &-header{        
+        border-bottom: 1px solid #ECECEC;
+        outline: 2px dashed rgb(37, 190, 37); 
+    }
+
+    &-menu-mobile{
+        display: block;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    &-order{
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 198px;
+        text-align: center;        
+        margin: auto; 
+        
+        &__btn {
+            margin-top: 30px;
+        }
+    }
+
+    &-what-we-do{
+        display: none;
+    }
 
 
     &-team{
@@ -22,44 +50,19 @@
     &-customers{
         padding-top: 60px;
         padding-bottom: 60px;
-         outline: 2px dashed rgb(37, 190, 37);         
-    }
-    
-    &-what-we-do{
-        display: none;
-    }
-
-    &__heading {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 1.178;  
-        text-align: center;
-        letter-spacing: 0.03em;
-
-        margin-bottom: 30px;
+        outline: 2px dashed rgb(37, 190, 37);         
     }
 
     &-modal{
         padding: 40px;
     }
-    
-    &-order{
-        width: 100%;
-        padding-top: 118px;
-        padding-bottom: 198px;
-        text-align: center;        
-        margin: auto; 
-        
-        &__btn {
-            margin-top: 30px;
-        }
-    }
 
-    &-header{        
-        border-bottom: 1px solid #ECECEC;
-         outline: 2px dashed rgb(37, 190, 37); 
+    &-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+     outline: 2px dashed rgb(37, 190, 37); 
+     
     }
-
 
 }
 
@@ -103,6 +106,7 @@
 
 @media screen and (min-width:1200px) {
     .section{
+
         &-order{
             padding-top: 200px;
             padding-bottom: 200px;
