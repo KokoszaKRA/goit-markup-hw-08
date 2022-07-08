@@ -1,0 +1,9 @@
+.mobile-navigation{
+    &__item{
+        margin-bottom: 302px;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 36px;
+    }
+}

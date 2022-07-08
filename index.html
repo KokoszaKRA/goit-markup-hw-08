@@ -20,7 +20,7 @@
    <header class="section-header">
         <div class="container ">
             <a class="logo logo--color-blue header__logo" href="./index.html">Web<span class="logo__span logo__span--color-black">Studio</span></a>
-            <button class="hamburger" aria-label="Menu">
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <span class="hamburger__container" tabindex="-1">
                   <span class="hamburger__bars"></span>
                 </span>
@@ -58,7 +58,7 @@
                     <li class="header-address__item">
                         <a class="
                         link
-                        link--font-style 
+                        link--font-smal 
                         link--color-grey 
                         link--action-color-blue
                         header-address__link" 
@@ -72,7 +72,7 @@
                     <li class="header-address__item">
                         <a class="
                         link
-                        link--font-style 
+                        link--font-smal 
                         link--color-grey 
                         link--action-color-blue
                         header-address__link" 
@@ -668,93 +668,110 @@
     </div>
 
     <!-- MENU MOBILE -->
-    <div class="section-menu-mobile">
-        <div class="container">
+        <div class="container section-mobile-menu__wrap menu-container js-menu-container" id="mobile-menu">
             <button type="button" class="
+            menu-toggle 
+            js-close-menu
             btn
             btn--background-color-white
-            btn--bsection-order-solid
             btn--font-big
             btn--size-thirty-by-thirty
             btn--bsection-order-radius-circle
-            modal__btn-exit
+            section-mobile-menu__btn-exit
             " data-modal-close>
                 <svg class="exit-icon">
                     <use href="./images/icons.svg#exit-icon"></use>
                 </svg>
             </button>
             <!-- NAV MOBILE -->
-            <nav class="navigation">
-                <ul class="header-navigation list">
-                    <li class="header-navigation__item header-navigation__item--activ">
+            <nav class="section-menu-mobile__navigation">
+                <ul class="mobile-navigation list">
+                    <li class="mobile-navigation__item">
                         <a class="
                         link 
                         link--color-black
-                        link--action-color-blue 
-                        header-navigation__link" 
+                        link--action-color-blue
+                        link--font-size-junbo 
+                        mobile-navigation__link" 
                         href="./index.html">Agencja</a>
                     </li>
-                    <li class="header-navigation__item">
+                    <li class="mobile-navigation__item">
                         <a class="
                         link 
                         link--color-black
                         link--action-color-blue 
-                        header-navigation__link" 
+                        link--font-size-junbo 
+                        mobile-navigation__link" 
                         href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="header-navigation__item">
+                    <li class="mobile-navigation__item">
                         <a class="
                         link 
                         link--color-black
                         link--action-color-blue 
-                        header-navigation__link" 
+                        link--font-size-junbo 
+                        mobile-navigation__link" 
                         href="#">Kontakt</a>
                     </li>
                 </ul>
             </nav>
             <!-- ADDRESS MOBILE -->
-            <address class="header-address">
-                <ul class="header-address__list list">
-                    <li class="header-address__item">
+            <address class="section-menu-mobile__address">
+                <ul class="mobile-address list">
+                    <li class="mobile-address__item">
                         <a class="
                         link
-                        link--font-style 
-                        link--color-grey 
+                        link--font-size-big
+                        link--color-blue 
                         link--action-color-blue
-                        header-address__link" 
-                        href="mailto:info@devstudio.com">
-                            <svg class="header-address__icon header-address__envelope">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
+                        mobile-address__link" 
+                        href="tel:+48111111111">+48 111 111 111</a>
                     </li>
-                    <li class="header-address__item">
+                    <li class="mobile-address__item">
                         <a class="
                         link
-                        link--font-style 
+                        link--font-size-xm
                         link--color-grey 
                         link--action-color-blue
-                        header-address__link" 
-                        href="tel:+48111111111">
-                            <svg class="header-address__icon header-address__phone">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +48 111 111 111
-                        </a>
+                        mobile-address__link" 
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                 </ul>
             </address>
-            <div class="social-mobile">
-                <ul class="social-mobile__list list">
-                    <li class="social-mobile__item">Instagram</li>
-                    <li class="social-mobile__item">Twitter</li>
-                    <li class="social-mobile__item">Facebook</li>
-                    <li class="social-mobile__item">LinkedIn</li>
+            <!-- SOCIAL MOBILE -->
+            <div class="mobile-social">
+                <ul class="mobile-social__list list">
+                    <li class="mobile-social__item">
+                        <a class="
+                        link 
+                        link--color-blue 
+                        link--font-size-medium
+                        mobile-social__link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="
+                        link 
+                        link--color-blue 
+                        link--font-size-medium
+                        mobile-social__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="
+                        link 
+                        link--color-blue 
+                        link--font-size-medium
+                        mobile-social__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="
+                        link 
+                        link--color-blue 
+                        link--font-size-medium
+                        mobile-social__link" href="#">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
 
 <script src="./js/modal.js"></script>
 </body>

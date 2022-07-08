@@ -1,6 +1,7 @@
 .discription {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 30px;
     
 
 
@@ -38,9 +39,7 @@
 
 @media screen and (min-width:480px) and (max-width: 767px) {
     .discription {
-        display: block;
-        padding-top: 60px;
-        padding-bottom: 30px;
+       
         
         &__item{
             max-width: 450px;
