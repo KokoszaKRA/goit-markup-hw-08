@@ -26,7 +26,3 @@
       bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
-
-
-  <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        </button>

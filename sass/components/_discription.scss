@@ -94,6 +94,7 @@
 
 @media screen and (min-width:1200px) {
     .discription {
+        display: flex;
         &__icon{
             max-width: 270px;
             width: 100%;
