@@ -1,6 +1,6 @@
-.section-order{    
+.section-order{  
     &__title {
-        max-width: 465px;
+        min-width: 465px;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.615;        
@@ -22,15 +22,31 @@
         }
         
         &-photo{
-            background-image: 
-            linear-gradient( rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url(../images/order-foto/Img.jpg);
+            display: block;
+            background-image: $orders-bg-overlay, $orders-bg-photo;
+
+            @include retina{
+                background-image: $orders-bg-overlay, $orders-bg-photo-2x;       
+            }
+
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: cover;
+
+            
         }
     }
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .section-order--background-photo{        
+        background-image: $orders-bg-overlay, $orders-bg-tablet;
+
+        @include retina {
+            background-image: $orders-bg-overlay, $orders-bg-tablet-2x;       
+        }
+    }
+    
 }
 
   @media screen and (min-width:1200px) {
@@ -39,6 +55,14 @@
             max-width: 696px;           
             font-size: 44px;
             line-height: 1.363;
+        }
+
+        &--background-photo{            
+            background-image: $orders-bg-overlay, $orders-bg;
+            
+            @include retina {
+                background-image: $orders-bg-overlay, $orders-bg-2x;       
+            }            
         }
     }
   }

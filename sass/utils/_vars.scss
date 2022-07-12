@@ -14,3 +14,18 @@
     font-family: 'Roboto';
     color: var(--main-color);
   }
+
+
+// Background image ordrs @1
+$orders-bg: url("../images/orders-bg/orders-bg-@1-1600x600.jpg");
+$orders-bg-tablet: url("../images/orders-bg/orders-bg-tablet-@1-768x400.jpg");
+$orders-bg-photo: url("../images/orders-bg/orders-bg-mobile-@1x-480x400.jpg");
+
+
+// Background image ordrs @2
+$orders-bg-2x: url("../images/orders-bg/orders-bg-@2x-3200x1200.jpg");
+$orders-bg-tablet-2x: url("../images/orders-bg/orders-bg-tablet-@2x-1536x800.jpg");
+$orders-bg-photo-2x: url("../images/orders-bg/orders-bg-mobile-@2x-960x800.jpg");
+
+// Background overlay orders 
+$orders-bg-overlay:linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4));
