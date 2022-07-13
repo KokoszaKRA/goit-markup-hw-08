@@ -11,7 +11,7 @@
 
     &-header{        
         border-bottom: 1px solid #ECECEC;
-        outline: 2px dashed rgb(37, 190, 37); 
+        padding: 16px 0; 
     }
 
     &-mobile-menu{
@@ -49,9 +49,8 @@
 
 
     &-team{
-        &--backgroud-color{
+    &--backgroud-color{
         background-color: var(--color-backdroud-second);
-        /* outline: 2px dashed rgb(37, 190, 37); */
     }
     }
 
@@ -60,8 +59,7 @@
     &-what-we-do,
     &-customers{
         padding-top: 60px;
-        padding-bottom: 60px;
-        outline: 2px dashed rgb(37, 190, 37);         
+        padding-bottom: 60px;      
     }
 
     &-modal{
@@ -71,28 +69,19 @@
     &-footer{
     padding-top: 60px;
     padding-bottom: 60px;
-     outline: 2px dashed rgb(37, 190, 37); 
-     
+    width: 100%;
+    }
+
+    &-discription{
+        padding-bottom: 60px;
+            
     }
 
 }
 
-@media screen and (min-width:480px) and (max-width: 767px) {
-    .section{
 
-        &-header{
-            padding: 16px 0;
-        }
 
-        &-discription{
-            padding-bottom: 60px;
-                
-        }
-
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1199px) {
+@media screen and (min-width:768px) {
     .section{
 
         &-mobile-menu{
@@ -116,12 +105,8 @@
 
 @media screen and (min-width:1200px) {
     .section{
-
-        &-mobile-menu{
-            display: none;
-        }
-
         &-order{
+            height: 100%;
             padding-top: 200px;
             padding-bottom: 200px;
             max-width: 1600px;
@@ -134,7 +119,8 @@
 
         &-discription{
             padding-top: 94px;
-             outline: 2px dashed rgb(37, 190, 37);         
+            padding-bottom: 0;
+            //  outline: 2px dashed rgb(37, 190, 37);         
         }
 
         &-what-we-do{
@@ -153,8 +139,6 @@
         &-customers{
             padding-top: 94px;
             padding-bottom: 94px;
-             outline: 2px dashed rgb(37, 190, 37);
-             
         }
     }
 }

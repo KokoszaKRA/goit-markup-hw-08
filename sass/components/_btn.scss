@@ -50,6 +50,36 @@
             width: 30px;
             height: 30px;
         }
+
+        &-wszystkie {
+            width: 103px;
+            height: 38px;
+        }
+
+        &-strony {
+        width: 128px;
+        height: 38px;
+        }
+        
+        &-aplikacje {
+            width: 145px;
+            height: 38px;
+            
+        }
+        
+        &-dizajn {
+            margin-top: 15px;
+            width: 103px;
+            height: 38px;
+        }
+        
+        &-marketing {
+            margin-top: 15px;
+            width: 128px;
+            height: 38px;
+        }
+
+
     &-square-eighteen{
         width: 11px;
         height: 11px;
@@ -83,40 +113,6 @@
         }
 }
 
-@media screen and (min-width:480px) and (max-width: 767px) {
-    .btn{
-        &--size{        
-            &-wszystkie {
-                width: 103px;
-                height: 38px;
-            }
-    
-            &-strony {
-            width: 128px;
-            height: 38px;
-            }
-            
-            &-aplikacje {
-                width: 145px;
-                height: 38px;
-                
-            }
-            
-            &-dizajn {
-                margin-top: 15px;
-                width: 103px;
-                height: 38px;
-            }
-            
-            &-marketing {
-                margin-top: 15px;
-                width: 128px;
-                height: 38px;
-            }
-        } 
-        
-    }
-    }
    
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
@@ -147,11 +143,8 @@
                 width: 130px;
                 height: 38px;
             }
-        } 
-        
-    }
-    
-    
+        }         
+    } 
 }
 
 @media screen and (min-width:1200px) {

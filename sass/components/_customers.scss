@@ -1,5 +1,23 @@
 .customers{ 
   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  margin-right: -30px;
+  margin-bottom: -30px;
+
+  // &_link{
+  //   width: 210px;
+  //   height: 92px;
+  // }
+
+  &__item{
+    height: 92px;
+    width: 210px;
+    margin-right: 30px;
+    margin-bottom: 30px;            
+}
   &__link{
     align-items: center;
     justify-content: center;
@@ -22,7 +40,7 @@
   }
 
   &_item{
-    height: 92px;
+    
   }
 }
   
@@ -32,29 +50,6 @@
   }
 }
   
-
-@media screen and (min-width:480px) and (max-width: 767px) {
-  .customers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-between;
-    margin-right: -30px;
-    margin-bottom: -30px;
-
-    // &_link{
-    //   width: 210px;
-    //   height: 92px;
-    // }
-
-    &__item{
-      width: 210px;
-      margin-right: 30px;
-      margin-bottom: 30px;            
-  }
-  }
-    
-}
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
   .customers{

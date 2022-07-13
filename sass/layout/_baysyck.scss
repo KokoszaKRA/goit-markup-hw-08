@@ -12,36 +12,3 @@
 
 
 }
-
-
-
-// <img class="offer__img" src="image/mobile/nba450x294.jpg" srcset="
-//                       ./image/mobile/nba450x294.jpg 450w,
-//                       ./image/mobile/nba450x294@2x.jpg 900w,
-//                       ./image/tablet/nba354x294.jpg 354w,
-//                       ./image/tablet/nba354x294@2x.jpg 708w,
-//                       ./image/desktop/nba370x294.jpg 370w,
-//                       ./image/desktop/nba370x294@2x.jpg 740w
-//                     " alt="koszykarze." sizes="
-//                         (min-width: 1200px) 370px,
-//                         (min-width: 768px) calc(50vw - 30px),
-//                         (min-width: 320px) calc(100vw - 30px)">
-
-
-// <img
-// class="services__image"
-// srcset="
-//     images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@1x-370x294.jpg 370w,
-//     images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@2x-740x588.jpg 740w
-// "
-// sizes="(min-width: 1200px) 370px, 740px"
-// src="images/services-desktop/close-up-image-programer-working-his-desk-office_1098-18707-@1x-370x294.jpg"
-// alt="Close up image programer"
-// />
-
-
-// <picture>
-//     <source srcset="./images/johndoe3-450.jpg 450w, ./images/johndoe3-450@2x.jpg 900w" media="(min-width: 480px) and (max-width: 767px)" sizes="(min-width: 480px) 450px, 900px 100vw">
-//     <source srcset="./images/johndoe3-354.jpg 354w, ./images/johndoe3-354@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1200px)" sizes="(min-width: 768px) 354px, 708px 100vw">
-//     <img class="team__card-image--no-gap" src="./images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
-// </picture>

@@ -8,13 +8,12 @@
 }
 
 .section{
-
   &-header .container{
     display: flex;
     align-items: center;
+    justify-content: center;
     /* outline: 2px dashed rgb(37, 190, 37); */
   }
-
 }
 
 
@@ -29,14 +28,10 @@
 .container {
     max-width: 1199px;
   }
-  
-
 }
 
 @media screen and (min-width:1200px) {
   .container {
     max-width: 1200px;
   }
-
-
 }
