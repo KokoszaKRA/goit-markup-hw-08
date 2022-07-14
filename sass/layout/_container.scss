@@ -1,5 +1,4 @@
 .container {
-  min-width: 320px;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -15,3 +14,5 @@
     /* outline: 2px dashed rgb(37, 190, 37); */
   }
 }
+// calc(320px - 15px)
+// calc(1200px - 15px)
