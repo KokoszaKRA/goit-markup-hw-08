@@ -10,11 +10,11 @@
   --color-backdroud-second: #F5F4FA;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
-::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button {
   display: none;
 }
 
