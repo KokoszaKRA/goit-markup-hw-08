@@ -2,8 +2,12 @@
     cursor: pointer;
     //  display: block;
     flex-wrap: nowrap;
-    &__item{
+    &__item:not(:last-child){
         margin-bottom: 30px;
+    }
+
+    &__item{
+
         
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         &:hover,
@@ -115,11 +119,15 @@
         flex-wrap: wrap;
         gap: 30px;
         margin-right: 0;
+        
         &__item{
             flex-basis: auto;
-
             max-width: 370px;
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
         }
+        
         &__figcaption{
             max-width: 370px;
         }

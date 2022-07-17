@@ -1,4 +1,22 @@
 .section{
+    &-mobile-menu{
+        display: block;
+        position: relative;
+            
+        & .section-mobile-menu__btn-exit{
+            display: flex;
+            position:absolute;
+            right: 25.83px;
+            top: 27.5px; 
+            padding: 0; 
+            width: 11px;
+            height: 11px;
+            
+            align-items: center;
+            justify-content:center;                
+        }
+    } 
+
     &__heading {
         font-weight: 700;
         font-size: 28px;
